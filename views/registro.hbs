@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8 m-auto">
+            <h2>Crea tu usuario</h2>
+            {{!-- Method  : como y action : a donde!--}}
+            <form method="post" action="/registro/create">
+                <div class="form-group">
+                    <label id="nombre"><h4>Nombre</h4></label>
+                    <input type="text" name="nombre" class="form-control" placeholder="Nombre" required="" >
+                   
+                </div>
+                <div class="form-group">
+                    <label id="apellido"><h4>Apellido</h4></label>
+                    <input type="text" name="apellido" class="form-control" placeholder="Apellido" required="">
+                </div>
+                <div class="form-group">
+                    <label id="mail"><h4>Email</h4></label>
+                    <input type="email" name="mail" class="form-control" placeholder="foo@example.com" required="">
+                </div>
+                <div class="form-group">
+                    <label id="usuario"><h4>Usuario</h4></label>
+                    <input type="text" name="usuario" class="form-control" placeholder="usuario" required="">
+                </div>
+                <div class="form-group">
+                    <label id="password"><h4>Contraseña</h4></label>
+                    <input type="password" name="password" class="form-control" placeholder="****" required="">
+                </div>
+                <button type="submit" class="btn btn-block text-white bg-dark "><p>Registrate</p></button>
+            </form>
+            <span>{{message}}</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<h2> Ordenes de Compras </h2>
+ 
+<br>
+<table class="table col-8 m-auto">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col"><h3 style="color: aliceblue;">Compras</h3></th>
+      <th scope="col"><h3 style="color: aliceblue;">Usuario</h3></th>
+	  <th scope="col"></th>
+	</tr>
+  </thead>
+ <tbody>
+ {{#each CompraXuser}}
+    <tr>      
+      <td><h4>Numero de Compra : {{idcompra}} </h3></td>
+      <td><h4>{{txtusuario}}</h4></td>
+      <td><a href="/admin/compras/{{idcompra}}" class="btn btn-link text-dark"> <i class="fas fa-search"></a></td>
+    </tr>
+   {{/each}}
+  </tbody>
+</table>
+
+
+
+ 
+ 

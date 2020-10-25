@@ -1,0 +1,14 @@
+<h2> Menù </h2>
+ <div class="card m-auto bg-dark text-white" style="width: 60rem;">
+   {{#each CatxProd}}
+  <div class="card-header">
+    <h3>{{txtcategoria}}</h3>
+  </div>
+
+  <ul class="list-group list-group-flush">
+    {{#ArrProductos}}
+    <li class="list-group-item"><a href="/producto/single/{{idproducto}}" class="btn btn-link"> <h4> {{txtproducto}}</h4> </a></li>
+     {{/ArrProductos}}
+  </ul>
+{{/each}}
+</div>

@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8 m-auto">
+            <h2>Ingresar</h2>
+            {{!-- Method  : como y action : a donde!--}}
+            <form method="post" action="/login/ingreso">
+             
+                <div class="form-group">
+                    <label id="usuario"><h4>Usuario</h4></label>
+                    <input type="text" name="usuario" class="form-control" placeholder="usuario" required="">
+                </div>
+                <div class="form-group">
+                    <label id="password"><h4>Contraseña</h4></label>
+                    <input type="password" name="password" class="form-control" placeholder="****" required="">
+                </div>
+                <button type="submit" class="btn btn-block text-white bg-dark "><p>Ingresar</p></button>
+            </form>
+            <span>{{message}}</span>
+        </div>
+    </div>
+</div>
